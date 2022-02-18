@@ -8,6 +8,7 @@ The algorithm follows following rules:
 
 1. Customers who arrive first will be assigned to the final row (rated best view).
 2. If the number of available seats in a row exceeds the number of requested seats, each group will be assigned seats in a single row, leaving three seats empty after the group has been accommodated.
+ 
 3.If the number of people in the group exceeds the number of seats in the row, split the group and assign as many seats as are available in that row to a few people, while the rest are assigned to the opposite row.
 4. If the theater is unable to provide nearby (consecutive) seats to a group after scanning all rows, assign seats wherever there is a vacant seat.
 5. Seats will be assigned in alternate rows, but if the number of reservations exceeds the capacity of alternate seating, the system will begin allocating seats in the rows that have been left empty (FOR COVID Saftey).
