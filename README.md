@@ -13,12 +13,12 @@ The algorithm follows following rules:
 5. Seats will be assigned in alternate rows, but if the number of reservations exceeds the capacity of alternate seating, the system will begin allocating seats in the rows that have been left empty (FOR COVID Saftey).
 6. If the specified number of seats is not available in the theater, inform the consumer that there are insufficient seats.
 
-```Assumptions```
+__Assumptions__
 
 1. If the requested number of seats exceeds the available seats, the theater will not be able to book tickets for a group. Customers are notified in this scenario that there are insufficient seats available.
 2. In the input file, the reservation number (R###) will be in sequential sequence (R001, R002, R003,...)
 
-```How are the goals of the problem statement achieved?```
+__How are the goals of the problem statement achieved?__
 
 _Customer Satisfaction:_
 
@@ -31,7 +31,7 @@ _Maximum Theater Utilization:_
 2. In some situations, if we are unable to seat a group in a single row, we will assign seats wherever a vacant seat is available in the theater.
 3. When the number of reservation requests reaches a certain limit, the system starts using  the empty rows.
 
-```Steps for running```
+__Steps for running__
 1. Clone the project using the command: ```git clone https://github.com/SansBailmare/MovieTheatreSeating.git```
 2. Make classes directory to hold all the compiled classes.
 2. CD inside the folder MovieTheatreSeaing and comile all java classes : ```javac -d "classes"  $(find ./src/* | grep .java)```
